@@ -1,16 +1,23 @@
 import React, { Fragment } from "react";
+import "./style.css"
 import Header from "../../Components/Header";
-
+import Logo from "../../Images/logo.PNG";
 
 export default function Home() {
-  return(
+  return (
     <Fragment>
-    <div>
-     <Header/>
-     <h1>OLA MUNDO</h1>
-     Essa é a home
-    </div>
+      <div>
+        <Header />
+        <div className="container">
+          <div>          
+          </div>          
+          <img src={Logo} className="imgLogo"/>
+          <h6 className="textoAPP">
+            Aplicação inteligente para auxiliar na interpretação de 
+            conteúdos e no aprendizado de alunos surdos
+          </h6>
+        </div>
+      </div>
     </Fragment>
-  )
+  );
 }
-

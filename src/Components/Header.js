@@ -1,20 +1,49 @@
-import React from 'react';
+import React, { Fragment } from "react";
 
 const Header = () => {
+  return (
+    <Fragment>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            Elibras
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExample07"
+            aria-controls="navbarsExample07"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-  return(
-    <div>
-      <header className="d-flex justify-content-center py-3">
-      <ul className="nav nav-pills">
-        <li className="nav-item"><a className="nav-link active" aria-current="page">Home</a></li>
-        <li className="nav-item"><a className="nav-link">Features</a></li>
-        <li className="nav-item"><a className="nav-link">Pricing</a></li>
-        <li className="nav-item"><a className="nav-link">FAQs</a></li>
-        <li className="nav-item"><a className="nav-link">About</a></li>
-      </ul>
-    </header>
-    </div>
-  ) 
-}
+          <div className="collapse navbar-collapse" id="navbarsExample07">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">
+                  Home <span className="sr-only"></span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Publicacoes">
+                  Publicações
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/upload">
+                  Videos
+                </a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </Fragment>
+  );
+};
 
 export default Header;
